@@ -1,4 +1,0 @@
-Rich assertion
-
-n = 2
-assert n > 1, The number is greater than 2
