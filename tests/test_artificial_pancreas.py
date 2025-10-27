@@ -10,13 +10,13 @@ def instance():
 
 def test_meal(instance):
     start = instance.glucose_level
-   # pan = instance.meal(carbs=60)
+    pan = instance.meal(carbs=60)
    # assert instance.glucose_level > start
-   # assert pan > start, f"Expects pan to be greater than start"
+    assert pan > start, f"Expects pan to be greater than start"
     
 def test_exercise(instance):
     exp = instance.glucose_level
-    dur = instance.exercise(duration=40)
+    dur = instance.exercise(duration=int(40))
     assert exp > dur                        # You can't compare an int and None
 
 #def test_predict_action(var):
